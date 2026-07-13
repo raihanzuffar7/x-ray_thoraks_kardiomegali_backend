@@ -1,0 +1,7 @@
+train: G:/x-ray_thorax_kardiomegali/dataset_augmented/train/images
+val: G:/x-ray_thorax_kardiomegali/dataset_augmented/valid/images
+test: G:/x-ray_thorax_kardiomegali/dataset_augmented/test/images
+nc: 2
+names:
+- kardiomegali
+- normal

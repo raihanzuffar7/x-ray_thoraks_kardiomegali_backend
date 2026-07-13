@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['kardiomegali', 'normal']
+
+roboflow:
+  workspace: aisyahcare-clinic
+  project: kardiomegali-ctr
+  version: 9
+  license: Private
+  url: https://app.roboflow.com/aisyahcare-clinic/kardiomegali-ctr/9
