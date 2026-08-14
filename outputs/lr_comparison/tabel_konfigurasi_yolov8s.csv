@@ -1,0 +1,11 @@
+Hyperparameter,Baseline (Awal),Aggressive,Baseline (LR-Comparison),Conservative
+Pretrained,yolov8s.pt,yolov8s.pt,yolov8s.pt,yolov8s.pt
+Optimizer,AdamW,AdamW,AdamW,AdamW
+lr0,0.001,0.01,0.001,0.0001
+lrf,0.0001,0.0001,0.0001,0.0001
+Weight Decay,0.0005,0.0005,0.0005,0.0005
+Warmup Epochs,3,3,3,3
+Batch Size,16,16,16,16
+Image Size,512,512,512,512
+Epochs,50,30,30,30
+Early-Stop Patience,10,10,10,10

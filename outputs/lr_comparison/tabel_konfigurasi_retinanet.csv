@@ -1,0 +1,11 @@
+Hyperparameter,Baseline (Awal),Aggressive,Baseline (LR-Comparison),Conservative
+Backbone,ResNet50-FPN,ResNet50-FPN,ResNet50-FPN,ResNet50-FPN
+Optimizer,AdamW,AdamW,AdamW,AdamW
+LR Head,1e-4,1e-3,1e-4,1e-5
+LR Backbone,1e-5,1e-4,1e-5,1e-6
+Weight Decay,1e-4,1e-4,1e-4,1e-4
+Batch Size,4,4,4,4
+Image Size,512x512,512x512,512x512,512x512
+Epochs,50,30,30,30
+Early-Stop Patience,10,10,10,10
+Freeze Backbone,Epoch 1-3,Epoch 1-3,Epoch 1-3,Epoch 1-3

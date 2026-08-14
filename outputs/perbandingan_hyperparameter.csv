@@ -1,0 +1,19 @@
+Hyperparameter,YOLOv8s,RetinaNet
+Arsitektur,YOLOv8s (ultralytics),RetinaNet ResNet50 FPN
+Backbone,CSPDarknet + C2f,ResNet50 + FPN
+Pretrained,Ya (ImageNet),Ya (ImageNet)
+Epochs,50,50
+Early Stopping Patience,10,10
+Batch Size,16,4
+Image Size,512 × 512,512 × 512
+Optimizer,AdamW,AdamW
+Learning Rate (awal),0.001,1e-4 (head)
+Learning Rate (akhir / backbone),0.0001,1e-5 (backbone)
+Weight Decay,0.0005,1e-4
+Momentum,0.937,— (AdamW)
+LR Scheduler,Cosine LR Decay,"ReduceLROnPlateau (patience=3, factor=0.5)"
+Warmup Epochs,3,— 
+Freeze Backbone,Tidak,Ya (3 epoch pertama)
+Augmentasi,"Mosaic, Flip, HSV, Translate, Scale",Standard torchvision transforms
+Input Normalisasi,Auto (ultralytics),ImageNet mean/std
+Jumlah Class,"2 (kardiomegali, normal)","3 (background, kardiomegali, normal)"
